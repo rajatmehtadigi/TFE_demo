@@ -102,12 +102,13 @@ Project directory and Terraform configuration files
 
 Commands
 
-    1. terraform init --> Initialize terraform locally and creates .terraform and .terraform.lock.hcl file
-    2. terraform validate --> Checks either configurations are valid or not
-    3. git init --> If you haven't clone any repo in your system
-    4. git add . --> Adds everything into git locally
-    5. git commit -m "SOME MSG" --> Creates a commit with msg to track the records
-    6. git push origin BRANCH_NAME --> Push directory content from your machine to GitHub Repository
+    1. terraform login --> To login into terraform enterprise using CLI and after login you need to generate a token from terraform enterprise web portal, copy that token and paste it into CLI where it is asking to enter token to authenticate terraform enterprise account on CLI
+    2. terraform init --> Initialize terraform locally and creates .terraform and .terraform.lock.hcl file
+    3. terraform validate --> Checks either configurations are valid or not
+    4. git init --> If you haven't clone any repo in your system
+    5. git add . --> Adds everything into git locally
+    6. git commit -m "SOME MSG" --> Creates a commit with msg to track the records
+    7. git push origin BRANCH_NAME --> Push directory content from your machine to GitHub Repository
 
 Once you done with your push, then Terraform Enterprise will automatically start executing "Terraform Plan" and show you the plan of which resources are going to create by terraform, which resources are updating or removing or any other stuffs which is done by terraform.
 
