@@ -9,7 +9,7 @@ cat <<'EOF' > /var/www/html/index.html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Terraform Enterprise Demo</title>
+    <title>Terraform Enterprise Demo by Rajat Mehta</title>
 </head>
 <body>
     <h1>Hello from Terraform Enterprise!</h1>
