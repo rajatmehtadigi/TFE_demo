@@ -88,9 +88,12 @@ AWS IAM Role creation for Authentication on Terraform Enterprise web portal
 
 AWS Authentication on Terraform Enterprise web portal
 
-    1. Add required variables like - Terraform Variables and Environment Variables. If any sensitive credentials are stored, then check the "Sensitive" check box and then create the variable.
-
-        A. AWS_PROVIDER_AUTH for AWS Account Authentication
+    1. Add required variables
+    2. Types of Variables are -
+        i. Terraform Variables
+        ii. Environment Variables
+    3. If any sensitive credentials are stored, then check the "Sensitive" check box and then create the variable.
+        A. AWS_PROVIDER_AUTH --> AWS Account Authentication
         B. AWS_RUN_ROLE_ARN --> Assigned IAM Roles for "Terraform Plan" and "Terraform Apply" command so whenever any new push done on any specific branch then it will automatically trigger "Terraform Plan" from TFE portal and then ask for approval to execute "Terraform Apply" command.
 
 
